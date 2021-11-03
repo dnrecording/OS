@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\3D\\Semester1\\os\\case-study1\\case-study1.csproj",
+      "projectUniqueName": "X:\\3D\\Semester1\\os\\OS\\case-study1\\case-study1.csproj",
       "projectName": "case-study1",
-      "projectPath": "X:\\3D\\Semester1\\os\\case-study1\\case-study1.csproj",
+      "projectPath": "X:\\3D\\Semester1\\os\\OS\\case-study1\\case-study1.csproj",
       "packagesPath": "C:\\Users\\DrgN\\.nuget\\packages\\",
-      "outputPath": "X:\\3D\\Semester1\\os\\case-study1\\obj\\",
+      "outputPath": "X:\\3D\\Semester1\\os\\OS\\case-study1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DrgN\\AppData\\Roaming\\NuGet\\NuGet.Config"

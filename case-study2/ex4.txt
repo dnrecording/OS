@@ -1,0 +1,65 @@
+﻿using System;
+using System.Threading;
+namespace ex4
+{
+    class Program
+    {
+        private static string x = "";
+        private static int exitflag = 0;
+        private static object _Lock = new object();
+        static void ThReadX()
+        {
+            Monitor.Enter(_Lock);
+            try
+            {
+                {
+                    while (exitflag == 0)
+                    {
+                        Monitor.Pulse(_Lock);
+                        Monitor.Wait(_Lock);
+                        if(exitflag == 1)break;
+                        Console.WriteLine("X = {0}", x);
+                    }
+                }
+            }
+            finally
+            {
+                Monitor.Exit(_Lock);
+            }
+        }
+        static void ThWriteX()
+        {
+            string xx;
+            Monitor.Enter(_Lock);
+            try{
+            while (exitflag == 0)
+            {
+                    Console.Write("Input: ");
+                    xx = Console.ReadLine();
+                    if (xx == "exit")
+                    {
+                        Console.WriteLine("Thread 1 exit ");
+                        exitflag = 1;
+                        Monitor.Pulse(_Lock);
+                    }
+                    else
+                    {
+                        x = xx;
+                        Monitor.Pulse(_Lock);
+                        Monitor.Wait(_Lock);
+                    }
+            }
+            }
+            finally{
+                Monitor.Exit(_Lock);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Thread A = new Thread(new ThreadStart(ThReadX));
+            Thread B = new Thread(new ThreadStart(ThWriteX));
+            A.Start();
+            B.Start();
+        }
+    }
+}

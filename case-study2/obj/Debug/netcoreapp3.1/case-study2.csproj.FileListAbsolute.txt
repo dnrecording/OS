@@ -1,0 +1,13 @@
+X:\3D\Semester1\os\case-study2\bin\Debug\netcoreapp3.1\case-study2.exe
+X:\3D\Semester1\os\case-study2\bin\Debug\netcoreapp3.1\case-study2.deps.json
+X:\3D\Semester1\os\case-study2\bin\Debug\netcoreapp3.1\case-study2.runtimeconfig.json
+X:\3D\Semester1\os\case-study2\bin\Debug\netcoreapp3.1\case-study2.runtimeconfig.dev.json
+X:\3D\Semester1\os\case-study2\bin\Debug\netcoreapp3.1\case-study2.dll
+X:\3D\Semester1\os\case-study2\bin\Debug\netcoreapp3.1\case-study2.pdb
+X:\3D\Semester1\os\case-study2\obj\Debug\netcoreapp3.1\case-study2.csprojAssemblyReference.cache
+X:\3D\Semester1\os\case-study2\obj\Debug\netcoreapp3.1\case-study2.AssemblyInfoInputs.cache
+X:\3D\Semester1\os\case-study2\obj\Debug\netcoreapp3.1\case-study2.AssemblyInfo.cs
+X:\3D\Semester1\os\case-study2\obj\Debug\netcoreapp3.1\case-study2.csproj.CoreCompileInputs.cache
+X:\3D\Semester1\os\case-study2\obj\Debug\netcoreapp3.1\case-study2.dll
+X:\3D\Semester1\os\case-study2\obj\Debug\netcoreapp3.1\case-study2.pdb
+X:\3D\Semester1\os\case-study2\obj\Debug\netcoreapp3.1\case-study2.genruntimeconfig.cache
