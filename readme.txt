@@ -1,1 +1,7 @@
-Case study#1 progress
+CASE STUDY #OS
+
+MANUAL:
+1. FOLK PROJECT
+2. RENAME (NEEDED)FILE FROM .txt TO .cs
+3. TYPE "dotnet run" IN TERMINAL
+4. DONE
