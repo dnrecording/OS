@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 
 namespace case_study2
@@ -17,7 +17,8 @@ namespace case_study2
             TSBuffer[Back] = eq;
             Back++;
             Back %= 10;
-            Count += 1;
+            Interlocked.Increment(ref Count);
+            //Count += 1;
             //Console.WriteLine("Push: {0} , Count: {1}", eq, Count);
         }
 
@@ -27,7 +28,8 @@ namespace case_study2
             x = TSBuffer[Front];
             Front++;
             Front %= 10;
-            Count -= 1;
+            Interlocked.Decrement(ref Count);
+            //Count -= 1;
             return x;
         }
 
@@ -39,8 +41,8 @@ namespace case_study2
                 lock(_Lock){
                 while (Count >= 10);
                 EnQueue(i);
-                Thread.Sleep(5);
                 }
+                Thread.Sleep(5);
             }
         }
 
@@ -53,8 +55,8 @@ namespace case_study2
                 lock(_Lock){
                 while (Count >= 10);
                 EnQueue(i);
-                Thread.Sleep(5);
             }
+            Thread.Sleep(5);
             }
         }
 
@@ -70,8 +72,8 @@ namespace case_study2
                 j = DeQueue();
                 Console.WriteLine("Pop: {0} , thread: {1} , Count: {2}", j, t, Count);
                 //Console.WriteLine("j={0}, thread:{1}", j, t);
-                Thread.Sleep(100);
                 Monitor.Exit(_Lock2);
+                Thread.Sleep(100);
             }
         }
         static void Main(string[] args)
